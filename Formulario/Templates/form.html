@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/style.css') }}">  
+</head>
+
+
+<body>
+  
+  <div class="container">  
+    <form id="contact" method="POST"> 
+      <h1>Formulario</h1>    
+      <h4>Ingrese los datos</h4>
+      <fieldset>
+        <input placeholder="Nombre" type="text" tabindex="1" required name="name">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email " type="email" tabindex="2" required name="email">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Teléfono " type="tel" tabindex="3" required name="phone">
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Mensaje" tabindex="10" required name="mensaje"></textarea>
+      </fieldset>
+      <fieldset>
+        <input placeholder="id cliente " type="text" tabindex="5" required name="idcliente">
+      </fieldset>
+      <fieldset>
+        <input placeholder="id compañia " type="text" tabindex="6" required name="idcompania">
+      </fieldset>
+
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Enviar</button>
+      </fieldset>
+      
+    </form>
+  </div>
+
+    
+</body>
+</html>
